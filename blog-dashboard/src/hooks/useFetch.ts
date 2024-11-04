@@ -1,21 +1,32 @@
+// src/hooks/useFetch.ts
+
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const useFetch = (url: string) => {
-  const [data, setData] = useState<any>(null);
-  const [loading, setLoading] = useState(true);
+// Define a generic type <T> for the expected data structure
+const useFetch = <T,>(url: string) => {
+  const [data, setData] = useState<T | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    axios.get(url)
-      .then(response => {
+    const fetchData = async () => {
+      setLoading(true);
+      try {
+        const response = await axios.get<T>(url);
         setData(response.data);
+      } catch (err: unknown) {
+        if (err instanceof Error) {
+          setError(err.message);
+        } else {
+          setError("An unexpected error occurred");
+        }
+      } finally {
         setLoading(false);
-      })
-      .catch(error => {
-        setError(error.message);
-        setLoading(false);
-      });
+      }
+    };
+
+    fetchData();
   }, [url]);
 
   return { data, loading, error };
