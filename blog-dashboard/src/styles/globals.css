@@ -1,0 +1,131 @@
+/* src/styles/globals.css */
+
+.post-card {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .post-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
+  
+  .post-body {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .post-author {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .card-actions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .view-details-button {
+    padding: 8px 16px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-details-button:hover {
+    background-color: #005bb5;
+  }
+
+  /* src/styles/globals.css */
+
+.user-filter {
+    max-width: 200px;
+    margin: 20px auto;
+  }
+  
+  .user-filter select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .user-filter select:focus {
+    border-color: #0070f3;
+    outline: none;
+  }
+
+  /* src/styles/globals.css */
+
+.post-detail {
+    max-width: 700px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-detail-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .post-detail-body {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .post-detail-author {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .comment {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .delete-button {
+    background-color: #e53e3e;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #c53030;
+  }
+  
+  
