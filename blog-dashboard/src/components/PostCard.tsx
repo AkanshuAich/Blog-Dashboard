@@ -36,7 +36,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, author }) => {
         .post-card {
           max-width: 1000px;
           margin: 20px auto;
-          padding: 20px;
+          padding: 30px;
           background-color: #ffffff;
           border-radius: 10px;
           box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
@@ -82,7 +82,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, author }) => {
         /* Media queries for responsiveness */
         @media (max-width: 768px) {
           .post-card {
-            padding: 15px;
+            padding: 20px;
             max-width: 90%;
           }
 
