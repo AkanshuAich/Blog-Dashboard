@@ -24,7 +24,7 @@ const PostCard: React.FC<PostCardProps> = ({ post, author }) => {
         onClick={handleClick}
 
         style={{
-          maxWidth: '1000px',
+          maxWidth: '1200px',
           margin: '20px auto',
           padding: '20px',
           backgroundColor: '#ffffff',
